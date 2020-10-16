@@ -3,55 +3,196 @@
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
-<title>Qwerty Keyboard</title>
+<title>Qwerty Virtual Keyboard</title>
 <meta name="description" content="Qwerty Keyboard">
 <meta name="author" content="Marco Aurélio">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <div class ="container">
-            <div class="center">
-                <section class="letters">
-                    <span class="keys" id="q">Q</span><span 
-                    class="keys" id="w">W</span><span 
-                    class="keys" id="e">E</span><span 
-                    class="keys" id="r">R</span><span 
-                    class="keys" id="t">T</span><span 
-                    class="keys" id="y">Y</span><span 
-                    class="keys" id="u">U</span><span 
-                    class="keys" id="i">I</span><span 
-                    class="keys" id="o">O</span><span 
-                    class="keys" id="p">P</span><span 
-                    class="keys" id="backspace"><i class="fas fa-backspace"></i></span><br><br><br>                    
-                    <span  class="keys" id="a">A</span><span 
-                    class="keys" id="s">S</span><span 
-                    class="keys" id="d">D</span><span 
-                    class="keys" id="f">F</span><span 
-                    class="keys" id="g">G</span><span 
-                    class="keys" id="h">H</span><span 
-                    class="keys" id="j">J</span><span 
-                    class="keys" id="k">K</span><span 
-                    class="keys" id="l">L</span><br><br><br>
-                    <span class="keys" id="shift">SHIFT</span><span 
-                    class="keys" id="z">Z</span><span 
-                    class="keys" id="x">X</span><span 
-                    class="keys" id="c">C</span><span 
-                    class="keys" id="v">V</span><span 
-                    class="keys" id="b">B</span><span 
-                    class="keys" id="n">N</span><span 
-                    class="keys" id="m">M</span><br><br><br>
-                </section>
-                <span 
-                class="keys" id="dot">&nbsp.&nbsp</span><span 
-                class="keys" id="space">SPACE</span><span 
-                class="keys" id="comma">&nbsp,&nbsp</span>
+        <div class="ed-content" contenteditable="true">Digite seu texto</div>
+        <div class="kb-area">
+            <div class="kb-row">
+                <!--line1 have 14 buttons-->
+                <!--data-code for event.code in js-->
+                <div class="kb-button" data-code="Backquote">
+                    <span>`</span>
+                </div>
+                <div class="kb-button" data-code="Digit1">
+                    <span>1</span>
+                </div>
+                <div class="kb-button" data-code="Digit2">
+                    <span>2</span>
+                </div>
+                <div class="kb-button" data-code="Digit3">
+                    <span>3</span>
+                </div>
+                <div class="kb-button" data-code="Digit4">
+                    <span>4</span>
+                </div>
+                <div class="kb-button" data-code="Digit5">
+                    <span>5</span>
+                </div>
+                <div class="kb-button" data-code="Digit6">
+                    <span>6</span>
+                </div>
+                <div class="kb-button" data-code="Digit7">
+                    <span>7</span>
+                </div>
+                <div class="kb-button" data-code="Digit8">
+                    <span>8</span>
+                </div>
+                <div class="kb-button" data-code="Digit9">
+                    <span>9</span>
+                </div>
+                <div class="kb-button" data-code="Digit0">
+                    <span>0</span>
+                </div>
+                <div class="kb-button" data-code="Minus">
+                    <span>-</span>
+                </div>
+                <div class="kb-button" data-code="Equal">
+                    <span>=</span>
+                </div>
+                <div class="kb-button" data-code="Backspace">
+                    <span>Backspace ⌫</span>
+                </div>
+            </div>
+            <div class="kb-row">
+                <!--line2 have 13 buttons-->
+                <div class="kb-button" data-code="Tab">
+                    <span>Tab ⇥</span>
+                </div>
+                <div class="kb-button" data-code="KeyQ">
+                    <span>q</span>
+                </div>
+                <div class="kb-button" data-code="KeyW">
+                    <span>w</span>
+                </div>
+                <div class="kb-button" data-code="KeyE">
+                    <span>e</span>
+                </div>
+                <div class="kb-button" data-code="KeyR">
+                    <span>r</span>
+                </div>
+                <div class="kb-button" data-code="KeyT">
+                    <span>t</span>
+                </div>
+                <div class="kb-button" data-code="KeyY">
+                    <span>y</span>
+                </div>
+                <div class="kb-button" data-code="KeyU">
+                    <span>u</span>
+                </div>
+                <div class="kb-button" data-code="KeyI">
+                    <span>i</span>
+                </div>
+                <div class="kb-button" data-code="KeyO">
+                    <span>o</span>
+                </div>
+                <div class="kb-button" data-code="KeyP">
+                    <span>p</span>
+                </div>
+                <div class="kb-button" data-code="BracketRight">
+                    <span>[</span>
+                </div>
+                <div class="kb-button" data-code="BracketLeft">
+                    <span>]</span>
+                </div>           
+            </div>
+            <div class="kb-row">
+                <!--line3 have 14 buttons-->
+                <div class="kb-button" data-code="CapsLock">
+                    <span>CAPSLK ⇪</span>
+                </div>
+                <div class="kb-button" data-code="KeyA">
+                    <span>a</span>
+                </div>
+                <div class="kb-button" data-code="KeyS">
+                    <span>s</span>
+                </div>
+                <div class="kb-button" data-code="KeyD">
+                    <span>d</span>
+                </div>
+                <div class="kb-button" data-code="KeyF">
+                    <span>f</span>
+                </div>
+                <div class="kb-button" data-code="KeyG">
+                    <span>g</span>
+                </div>
+                <div class="kb-button" data-code="KeyH">
+                    <span>h</span>
+                </div>
+                <div class="kb-button" data-code="KeyJ">
+                    <span>j</span>
+                </div>
+                <div class="kb-button" data-code="KeyK">
+                    <span>k</span>
+                </div>
+                <div class="kb-button" data-code="KeyL">
+                    <span>l</span>
+                </div>
+                <div class="kb-button" data-code="Semicolon">
+                    <span>;</span>
+                </div>
+                <div class="kb-button" data-code="Quote">
+                    <span>'</span>
+                </div>
+                <div class="kb-button" data-code="Backslash">
+                    <span>\</span>
+                </div>
+                <div class="kb-button" data-code="Enter">
+                    <span>Enter ↵</span>
+                </div>
+            </div>
+            <div class="kb-row">
+                <!--line4 have 14 buttons-->
+                <div class="kb-button" data-code="ShiftLeft">
+                    <span>Shift ⇧</span>
+                </div>
+                <div class="kb-button" data-code="KeyZ">
+                    <span>z</span>
+                </div>
+                <div class="kb-button" data-code="KeyX">
+                    <span>x</span>
+                </div>
+                <div class="kb-button" data-code="KeyC">
+                    <span>c</span>
+                </div>
+                <div class="kb-button" data-code="KeyV">
+                    <span>v</span>
+                </div>
+                <div class="kb-button" data-code="KeyB">
+                    <span>b</span>
+                </div>
+                <div class="kb-button" data-code="KeyN">
+                    <span>n</span>
+                </div>
+                <div class="kb-button" data-code="KeyM">
+                    <span>m</span>
+                </div>
+                <div class="kb-button" data-code="Comma">
+                    <span>,</span>
+                </div>
+                <div class="kb-button" data-code="Period">
+                    <span>.</span>
+                </div>
+                <div class="kb-button" data-code="Slash">
+                    <span>/</span>
+                </div>
+                <div class="kb-button" data-code="ShiftRight">
+                    <span>Shift ⇧</span>
+                </div>
+            </div>
+            <div class="kb-row">
+                <!--line5 have 1 button-->
+                <div class="kb-button kb-space" data-code="Space">
+                    <span>Space</span>
+                </div>
             </div>
         </div>
     </main>
-
 <script src="js/app.js"></script>
 </body>
 </html>
